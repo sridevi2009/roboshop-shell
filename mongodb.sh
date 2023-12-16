@@ -15,6 +15,7 @@ VALIDATE (){
     if [ $1 -ne 0 ]
     then
         echo -e "$2 ... $R FAILED $N"
+        exit 1
     else
         echo -e "$2 ... $G SUCCESS $N"
 }
@@ -30,3 +31,5 @@ fi # fi means reverse of if, indicating condition end
 cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
 
 VALIDATE $? "copied mongodb repo"
+
+sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mongod.cong &>> $LOGFILE
