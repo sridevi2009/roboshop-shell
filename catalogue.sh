@@ -57,7 +57,7 @@ cd /app
 
 unzip /tmp/catalogue.zip &>> $LOGFILE
 
-VALIDATE $? "unzipping catalogue service"
+VALIDATE $? "unzipping catalogue"
 
 npm install &>> $LOGFILE
 
