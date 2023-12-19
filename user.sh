@@ -76,7 +76,7 @@ VALIDATE $? "copying user service file"
 
 systemctl daemon-reload &>> $LOGFILE
 
-VALIDATE $? "user daemon-reload"
+VALIDATE $? "user daemon reload"
 
 systemctl enable user &>> $LOGFILE
 
