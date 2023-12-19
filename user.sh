@@ -80,7 +80,7 @@ VALIDATE $? "user daemon reload"
 
 systemctl enable user &>> $LOGFILE
 
-VALIDATE $? "enable user"
+VALIDATE $? "enabling user"
 
 systemctl start user &>> $LOGFILE
 
