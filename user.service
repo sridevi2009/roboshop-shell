@@ -9,4 +9,4 @@ ExecStart=/bin/node /app/server.js
 SyslogIdentifier=user
 
 [Install]
-WantedBy=multi-user.targe
+WantedBy=multi-user.target
