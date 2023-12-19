@@ -56,13 +56,13 @@ mkdir -p /app
 
 VALIDATE $? "creating app directory"
 
-curl -o /tmp/user.zip https://roboshop-builds.s3.amazonaws.com/user.zip &>> $LOGFILE
+curl -o /tmp/user.zip https://roboshop-builds.s3.amazonaws.com/user.zip  &>> $LOGFILE
 
 VALIDATE $? "downloading user application"
 
 cd /app 
 
-unzip /tmp/user.zip &>> $LOGFILE
+unzip -o /tmp/user.zip &>> $LOGFILE
 
 VALIDATE $? "unzipping user"
 
