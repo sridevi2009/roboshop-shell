@@ -72,7 +72,7 @@ VALIDATE $? "installing dependencies"
 
 cp /home/centos/roboshop-shell/user.service /etc/systemd/system/user.service &>> $LOGFILE
 
-VALIDATE $? "copying user.service"
+VALIDATE $? "copying user service file"
 
 systemctl daemon-reload &>> $LOGFILE
 
@@ -80,7 +80,7 @@ VALIDATE $? "user daemon-reload"
 
 systemctl enable user &>> $LOGFILE
 
-VALIDATE $? "enabling  user"
+VALIDATE $? "enable user"
 
 systemctl start user &>> $LOGFILE
 
