@@ -9,7 +9,7 @@ do
    echo "instace is: $i"
    if [ $i == "mongodb" ] || [ $i == "mysql" ] || [ $i == "shipping" ]
    then
-     INSTANCES_TYPE="t3.small"
+     INSTANCE_TYPE="t3.small"
    else
        INSTANCE_TYPE="t2.micro"
    fi     
