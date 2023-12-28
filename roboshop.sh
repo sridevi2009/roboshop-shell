@@ -6,8 +6,9 @@ INSTANCES=("mongodb" "mysql" "redis" "cart" "catalogue" "user" "shipping" "payme
 
 for i in "${INSTANCES[@]}"
 do
-   if [ $i == "mongodb" ] [ $i == "mysql" ] [ $i == "shipping" ]
-   then
+     echo "instace is: $i"
+    if [ $i == "mongodb" ] [ $i == "mysql" ] [ $i == "shipping" ]
+    then
        INSTANCES_TYPE="t3.small"
     else
        INSTANCE_TYPE="t2.micro"
