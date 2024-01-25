@@ -1,6 +1,5 @@
 #!/bin/bash
-
-AMI=ami-03265a0778a880afb
+AMI=ami-0f3c7d07486cad139
 SGI=sg-0f01b9f5bb3c8f55b
 INSTANCES=("mongodb" "mysql" "redis" "cart" "catalogue" "user" "shipping" "payment" "dispatch" "rabbitmq" "web")
 ZONE_ID=Z01257041SG6EO358I2TX
@@ -23,7 +22,7 @@ do
   {
     "Comment": "Testing creating a record set"
     ,"Changes": [{
-      "Action"              : "CREATE"
+      "Action"              : "UPSERT"
       ,"ResourceRecordSet"  : {
         "Name"              : "'$i'.'$DOMAIN_NAME'"
         ,"Type"             : "A"
