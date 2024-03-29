@@ -2,8 +2,8 @@
 
 AMI=ami-0f3c7d07486cad139
 SG_ID=sg-03c7377220fd23f2a #replace with your SG ID
-INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
-# INSTANCES=("web")
+# INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
+INSTANCES=("catalogue")
 
 
 ZONE_ID=Z06938882FFP9CG45JXHM # replace your zone ID
